@@ -143,6 +143,13 @@ docker compose up --build
 docker compose down
 ```
 
+> **Note**: the Dockerfile/docker-compose setup was written and YAML/syntax-validated,
+> but not build-verified in this environment (Docker Desktop's engine would not
+> start locally). Equivalent functionality — the API and Streamlit frontend
+> running together, form submission through to prediction, SHAP chart, and
+> history — was verified manually in a venv and in-browser (see Option B).
+> Run `docker compose up --build` yourself to confirm the containerized path.
+
 ### Option B: manual (venv)
 
 ```bash
